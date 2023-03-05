@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import pytest
 from selenium import webdriver
 import time
@@ -18,7 +17,7 @@ def browser(request):
     print("\nquit browser..")
     time.sleep(3)
     browser.quit()
-=======
+
 import pytest
 from selenium import webdriver
 import time
@@ -38,4 +37,4 @@ def browser(request):
     print("\nquit browser..")
     time.sleep(3)
     browser.quit()
->>>>>>> 23b2b86d6308ed9227695baf7a22f7b0ee713d3c
+
