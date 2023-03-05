@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from selenium.webdriver.common.by import By # Для поиска по селекторам
 import time
 
