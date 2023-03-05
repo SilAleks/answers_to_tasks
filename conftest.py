@@ -15,5 +15,5 @@ def browser(request):
     browser.get(f"https://selenium1py.pythonanywhere.com/{language}/catalogue/coders-at-work_207/")
     yield browser
     print("\nquit browser..")
-    time.sleep(3)
+    #time.sleep(3)
     browser.quit()
