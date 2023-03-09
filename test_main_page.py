@@ -9,9 +9,8 @@ def go_to_login_page(browser):  # ф-я клика по ссылке логин�
     login_link.click()
 
 def test_guest_can_go_to_login_page(browser):   # тест
-    #browser.get(link)
-    #go_to_login_page(browser)
     link = "http://selenium1py.pythonanywhere.com/"
     page = MainPage(browser, link)
     page.open()
-    page.go_to_login_page()
+    page.should_be_login_link()
+    #page.go_to_login_page()
