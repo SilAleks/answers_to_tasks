@@ -10,8 +10,15 @@ class MainPage(BasePage):
     def go_to_login_page(self): # self - для доступа к элементам импортируемого класса 
         login_link = self.browser.find_element(*MainPageLocators.LOGIN_LINK) # через self
         login_link.click()
-    
+        # Добавляем обработку alert, если таковой будет на странице
+        #alert = self.browser.switch_to.alert
+        #alert.accept()
+        # Возвращаем занчения для LoginPage (способ 1)
+        #return LoginPage(browser=self.browser, url=self.browser.current_url)
+    '''
     def go_to_login_page(self):
         link = self.browser.find_element(*MainPageLocators.LOGIN_LINK)
         link.click()
-        return LoginPage(browser=self.browser, url=self.browser.current_url)
+        # Возвращаем занчения для LoginPage (способ 1)
+        #return LoginPage(browser=self.browser, url=self.browser.current_url)
+    '''
