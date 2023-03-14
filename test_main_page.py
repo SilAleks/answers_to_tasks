@@ -1,4 +1,4 @@
-from selenium.webdriver.common.by import By # Для поиска по селекторам
+#from selenium.webdriver.common.by import By # Для поиска по селекторам
 from .pages.main_page import MainPage
 from .pages.login_page import LoginPage
 
